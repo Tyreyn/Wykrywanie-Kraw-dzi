@@ -33,7 +33,7 @@ rob_x = cv2.filter2D(img, cv2.CV_64F, kernel_Roberts_x)
 rob_y = cv2.filter2D(img, cv2.CV_64F, kernel_Roberts_y)
 rob = rob_x + rob_y
 
-
+# ***** WYSWIETLENIE ZDJEC *****
 plt.subplot(4,2,1),plt.imshow(img,cmap = 'gray')
 plt.title('ORYGINAŁ'), plt.xticks([]), plt.yticks([])
 plt.subplot(4,2,3),plt.imshow(sob_x,cmap = 'gray')
